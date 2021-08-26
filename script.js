@@ -101,6 +101,23 @@ function reverseString(str) {
   // CHALLENGE 6: FIZZBUZZ
   // Write a program that prints all the numbers from 1 to 100. For multiples of 3, instead of the number, print "Fizz", for multiples of 5 print "Buzz". For numbers which are multiples of both 3 and 5, print "FizzBuzz".
   function fizzBuzz() {}
+
+// CHALLENGE 7: REPEAT A STRING
+//Repeat a given string str (first argument) for num times (second argument). 
+//Return an empty string if num is not a positive number. 
+//For the purpose of this challenge, do not use the built-in .repeat() method.
+
+function repeatStringNumTimes(str, num) {
+  let repVar = ""; //Strings are immutable in JavaScript so we will need a new variable to store the truncated string.
+  while (num > 0) { //this increments down from num until it reaches 0
+    repVar += str //this adds the str to the new variable while the loop condition remains true
+    num--; //this increments the loop down to 0 so it exits the loop
+  }
+  return repVar;
+}
+repeatStringNumTimes("abc", 3);
+
+
   
   // Call Function
   const output = reverseString('hello');
