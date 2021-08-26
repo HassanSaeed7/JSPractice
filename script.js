@@ -194,12 +194,39 @@ let container = arr2.slice();
 }
 frankenSplice([1, 2, 3], [4, 5, 6], 1);
 
+//Since our goal is to return the new array with out altering arr1 or arr2 we create a local variable and add all the items from arr2 using the slice() function
+//Since the splice() function will mutate (alter) arrays and can be used to add new elements we will use it to add the contents of arr1 into container. 
+//n is the starting position where our content will be inserted. We won’t be deleting any elements so the next argument is 0. 
+//Then we add the entire contents of arr1 using spread syntax ....
+
+//Convert Celsius to Fahrenheit
+//The algorithm to convert from Celsius to Fahrenheit is the temperature in Celsius times 9/5, plus 32.
+function convertToF(celsius) {
+  let fahrenheit = celsius * 9 / 5 + 32;
+  return fahrenheit;
+}
+convertToF(30);
 
 
+//Falsy Bouncer
+//Remove all falsy values from an array.
+//Falsy values in JavaScript are false, null, 0, "", undefined, and NaN.
 
+function bouncer(arr) {
+  return arr.filter(Boolean);
+}
+bouncer([7, "ate", "", false, 9]);
 
-
-
+//using a for loop and an empty array, we push arr[i] after the if statement checks if the index is truthy.
+// falsy statements are undefined, null, NaN, 0, “” (empty string), and false so it would result // [7, "ate", 9]
+function bouncer(arr) {
+  let newArray = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i]) newArray.push(arr[i]);
+  }
+  return newArray;
+}
+bouncer([7, "ate", "", false, 9]);
 
 
 
