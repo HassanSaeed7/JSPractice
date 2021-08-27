@@ -232,15 +232,15 @@ bouncer([7, "ate", "", false, 9]);
 //Where do I Belong
 // Return the lowest index at which a value (second argument) should be inserted into an array (first argument) once it has been sorted. 
 // The returned value should be a number.
-function getIndexToIns(arr, num) {
-  arr.sort((a, b) => (a - b)); //sort through the array 
-  for (let i = 0; i < arr.length; i++) { //loop through the array, comparing num to each iteration of arr
-    if (arr[i] >= num) {
-      return i;
-    }
-  }
-  return arr.length; //this ensures that you return an index position instead of the array
-}
+// function getIndexToIns(arr, num) {
+//   arr.sort((a, b) => (a - b)); //sort through the array 
+//   for (let i = 0; i < arr.length; i++) { //loop through the array, comparing num to each iteration of arr
+//     if (arr[i] >= num) {
+//       return i;
+//     }
+//   }
+//   return arr.length; //this ensures that you return an index position instead of the array
+// }
 
 getIndexToIns([40, 60], 50);
 // First I sort the array using .sort(callbackFunction) to sort it by lowest to highest, from left to right.
@@ -264,6 +264,6 @@ function getIndexToIns(arr, num) {
 
 
 // Call Function
-  const output = reverseString('hello');
+  const output = getIndexToIns([1, 2, 3, 4, 86, 6, 5, 5, 6, 6, 5, 4, 3, 5, 6, 7, 5, 9], 5);
   
   console.log(output);
