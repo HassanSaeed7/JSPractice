@@ -263,11 +263,14 @@ function getIndexToIns(arr, num) {
 
 // Lastly, ["Alien", "line"], should return true because all of the letters in line are present in Alien.
 function mutation(arr) {
-  
-  return arr;
-}
+  let arr0 = arr[0].toLowerCase(); //set the array items equal to a new variable and lowercase them.
+  let arr1 = arr[1].toLowerCase();
+  for (let i = 0; i < arr1.length; i++) { //run a for loop through the 2nd array's length
+  if (arr0.indexOf(arr1[i]) < 0) return false;  //if the indexOf returns a negative number, you know a value in arr1 don't match the value in arr0 and will return false.
+  }
+  return true; //otherwise, the letters in arr1 match those in arr0 and it returns true
 
-mutation(["hello", "hey"]);
+console.log(mutation(["hello", "hey"])); //this would be false because there is no y in hello
 
 
 
