@@ -255,7 +255,11 @@ function getIndexToIns(arr, num) {
 
 
 
+function mutation(arr) {
+  return arr;
+}
 
+mutation(["hello", "hey"]);
 
 
 
