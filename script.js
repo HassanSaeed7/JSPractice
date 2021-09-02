@@ -269,8 +269,8 @@ function mutation(arr) {
   if (arr0.indexOf(arr1[i]) < 0) return false;  //if the indexOf returns a negative number, you know a value in arr1 don't match the value in arr0 and will return false.
   }
   return true; //otherwise, the letters in arr1 match those in arr0 and it returns true
-
-console.log(mutation(["hello", "hey"])); //this would be false because there is no y in hello
+}
+mutation(["hello", "hey"]); //this would be false because there is no y in hello
 
 
 
