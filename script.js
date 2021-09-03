@@ -89,15 +89,6 @@ function capitalizeLetters(str) {
     .join(" ");
 }
 
-// CHALLENGE 5: MAX CHARACTER
-// Return the character that is most common in a string
-// ex. maxCharacter('javascript') == 'a'
-function maxCharacter(str) {}
-
-// CHALLENGE 6: FIZZBUZZ
-// Write a program that prints all the numbers from 1 to 100. For multiples of 3, instead of the number, print "Fizz", for multiples of 5 print "Buzz". For numbers which are multiples of both 3 and 5, print "FizzBuzz".
-function fizzBuzz() {}
-
 // CHALLENGE 7: REPEAT A STRING
 //Repeat a given string str (first argument) for num times (second argument).
 //Return an empty string if num is not a positive number.
@@ -257,6 +248,18 @@ function mutation(arr) {
   return true; //otherwise, the letters in arr1 match those in arr0 and it returns true
 }
 mutation(["hello", "hey"]); //this would be false because there is no y in hello
+
+
+// CHALLENGE 5: MAX CHARACTER
+// Return the character that is most common in a string
+// ex. maxCharacter('javascript') == 'a'
+function maxCharacter(str) {}
+
+// CHALLENGE 6: FIZZBUZZ
+// Write a program that prints all the numbers from 1 to 100. For multiples of 3, instead of the number, print "Fizz", for multiples of 5 print "Buzz". For numbers which are multiples of both 3 and 5, print "FizzBuzz".
+function fizzBuzz() {}
+
+
 
 // Call Function
 const output = getIndexToIns(
