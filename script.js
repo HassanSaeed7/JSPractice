@@ -232,15 +232,15 @@ bouncer([7, "ate", "", false, 9]);
 //Where do I Belong
 // Return the lowest index at which a value (second argument) should be inserted into an array (first argument) once it has been sorted. 
 // The returned value should be a number.
-// function getIndexToIns(arr, num) {
-//   arr.sort((a, b) => (a - b)); //sort through the array 
-//   for (let i = 0; i < arr.length; i++) { //loop through the array, comparing num to each iteration of arr
-//     if (arr[i] >= num) {
-//       return i;
-//     }
-//   }
-//   return arr.length; //this ensures that you return an index position instead of the array
-// }
+function getIndexToIns(arr, num) {
+  arr.sort((a, b) => (a - b)); //sort through the array 
+  for (let i = 0; i < arr.length; i++) { //loop through the array, comparing num to each iteration of arr
+    if (arr[i] >= num) {
+      return i;
+    }
+  }
+  return arr.length; //this ensures that you return an index position instead of the array
+}
 
 getIndexToIns([40, 60], 50);
 // First I sort the array using .sort(callbackFunction) to sort it by lowest to highest, from left to right.
@@ -256,11 +256,8 @@ function getIndexToIns(arr, num) {
 
 // Mutations
 // Return true if the string in the first element of the array contains all of the letters of the string in the second element of the array.
-
 // For example, ["hello", "Hello"], should return true because all of the letters in the second string are present in the first, ignoring case.
-
 // The arguments ["hello", "hey"] should return false because the string hello does not contain a y.
-
 // Lastly, ["Alien", "line"], should return true because all of the letters in line are present in Alien.
 function mutation(arr) {
   let arr0 = arr[0].toLowerCase(); //set the array items equal to a new variable and lowercase them.
