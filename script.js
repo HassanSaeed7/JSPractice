@@ -285,6 +285,9 @@ console.log(output);
     $("#target5").clone().appendTo("#left-well"); //clones the target and appends it to 2nd's location
     $("#target1").parent().css("background-color", "red"); //applies CSS to target object's parent
     $("#right-well").children().css("color", "orange"); //applies css to target object's children
-
+    $(".target:nth-child(2)").addClass("animated bounce"); //adds a class to the nth child of your target class/id/element
+    $(".target:odd").addClass("animated shake"); //target odd elements only
+    $(".target:even").addClass("animated shake"); //target even elements only
+    $("body").addClass("animated hinge"); //adds class to the entire body of the page. This makes the page fall off after hinging 
   });
 </script>
