@@ -268,3 +268,23 @@ const output = getIndexToIns(
 );
 
 console.log(output);
+
+
+
+
+
+
+/////////////////////////////////////////////////////////// JQUERY
+
+<script>
+  $(document).ready(function() {
+    $("#target1").css("color", "red"); ///css function allows you to apply CSS
+    $("#target1").prop("disabled", true); //.prop allows you to change a property for element
+    $("#target4").remove(); //removes something from an element/class/id, etc
+    $("#target2").appendTo("#right-well"); //appends first item to 2nd's location
+    $("#target5").clone().appendTo("#left-well"); //clones the target and appends it to 2nd's location
+    $("#target1").parent().css("background-color", "red"); //applies CSS to target object's parent
+    $("#right-well").children().css("color", "orange"); //applies css to target object's children
+
+  });
+</script>
