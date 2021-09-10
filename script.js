@@ -291,3 +291,15 @@ console.log(output);
     $("body").addClass("animated hinge"); //adds class to the entire body of the page. This makes the page fall off after hinging 
   });
 </script>
+
+
+
+
+
+let hands = ["rock", "paper", "scissors"] 
+
+function randomSign() {
+    let randomIndex = Math.floor(Math.random() * 3)
+    return hands[randomIndex]  //return a random index from the hands array by creating a variable with a random number that goes up to whatever the index goes up to
+}
+console.log(randomSign())
