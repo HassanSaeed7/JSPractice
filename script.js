@@ -272,11 +272,20 @@ console.log(output);
 
 
 
+let hands = ["rock", "paper", "scissors"] 
 
+function randomSign() {
+    let randomIndex = Math.floor(Math.random() * 3)
+    return hands[randomIndex]  
+    //return a random index from the hands array by 
+    // creating a variable with a random number that 
+    // goes up to whatever the index goes up to
+}
+console.log(randomSign())
 
 /////////////////////////////////////////////////////////// JQUERY
 
-<script>
+{/* <script>
   $(document).ready(function() {
     $("#target1").css("color", "red"); ///css function allows you to apply CSS
     $("#target1").prop("disabled", true); //.prop allows you to change a property for element
@@ -290,17 +299,25 @@ console.log(output);
     $(".target:even").addClass("animated shake"); //target even elements only
     $("body").addClass("animated hinge"); //adds class to the entire body of the page. This makes the page fall off after hinging 
   });
-</script>
+</script> */}
 
 
 
-let hands = ["rock", "paper", "scissors"] 
 
-function randomSign() {
-    let randomIndex = Math.floor(Math.random() * 3)
-    return hands[randomIndex]  
-    //return a random index from the hands array by 
-    // creating a variable with a random number that 
-    // goes up to whatever the index goes up to
-}
-console.log(randomSign())
+// Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+// You may assume that each input would have exactly one solution, and you may not use the same element twice.
+// You can return the answer in any order.
+// Example 1:
+
+// Input: nums = [2,7,11,15], target = 9
+// Output: [0,1]
+// Output: Because nums[0] + nums[1] == 9, we return [0, 1].
+// Example 2:
+
+// Input: nums = [3,2,4], target = 6
+// Output: [1,2]
+// Example 3:
+
+// Input: nums = [3,3], target = 6
+// Output: [0,1]
+
